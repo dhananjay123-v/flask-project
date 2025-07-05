@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>portfolio</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(3, 3, 43);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(4, 4, 70);
+        height: 80px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 2px 20px;
+        font-size: 1.2rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .pehla{
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0;
+    }
+
+    .lefthai{
+        width: 30%;
+        font-size: 2.5rem;
+        margin-top: 130px;
+        margin-left: 50px;
+        text-align: left;
+        font-family: 'Roboto Mono', monospace
+    }
+
+    .my{
+        margin-left: 35px;
+        padding: 5px;
+
+    }
+
+    .righthai{
+        width: 30%;
+    }
+
+    .righthai img{
+        width: 100%;
+    }
+
+    .purple{
+        color: rgb(174, 97, 245);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Dhananjay's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="/home"><li>Home</li></a>
+                    <a href="/about"><li>About</li></a>
+                    <a href="/service"><li>Service</li></a>
+                    <a href="/contact"><li>Contact Us</li></a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pehla">
+            <div class="lefthai">
+                <div class="my">
+                 Hello, my name is <span class="purple">Dhananjay</span> and 
+                <div> I am a Data Analyst</div>
+                </div>
+            </div>
+            <div class="righthai">
+                <img src="bg4.webp" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(3, 3, 43);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(4, 4, 70);
+            padding: 0 40px;
+            height: 80px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li:hover {
+            color: orange;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+            max-width: 500px;
+            background-color: rgba(255, 165, 0, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+        }
+
+        .hero-text h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 280px;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 0 8px #000);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text,
+            .hero-image {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dhananjay's Portfolio</div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hello, I'm Dhananjay</h1>
+                <p>I am a passionate web developer who loves building clean and modern websites.</p>
+            </div>
+            <div class="hero-image">
+                <img src="bg4.webp" alt="Dhananjay's Photo" />
+            </div>
+        </section>
+    </main>
+</body>
+
+</html> -->
+
